@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etxe J | Cocina vasca en Bilbao</title>
+  <meta name="description" content="Etxe J, restaurante de cocina vasca en Bilbao. Carta, reseñas y reserva online.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Cabecera-->
+  <header id="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <span class="nombre">Etxe J</span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a class="boton-reserva" href="reserva.html">Reservar mesa</a></li>
+        </ul>
+      </nav>
+      <div class="limpiar"></div>
+    </div>
+  </header>
+
+  <main>
+    <nav id="indice">
+      <div class="contenedor">
+        <strong>En esta página:</strong>
+        <ul>
+          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a href="#destacados">Lo mejor de nuestra casa</a></li>   
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#ubicacion">Cómo llegar</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="portada">
+      <div class="contenedor">
+        <h1>Cocina vasca sencilla, hecha con el producto del día</h1>
+        <a class="boton boton-claro" href="carta.html">Ver la carta</a>
+        <a class="boton boton-borde" href="reserva.html">Reservar mesa</a>
+      </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="sobre-nosotros">
+      <div class="contenedor">
+        <h2>Sobre nosotros</h2>
+        <img class="foto-local" src="images/restaurante.jpg" alt="Comedor de Etxe J con la parrilla de carbón encendida" width="1200" height="670">
+        <p>Bienvenidos a nuestra casa, donde la pasión por el Cantábrico y el respeto por la tierra se fusionan en cada plato.
+        Rendimos homenaje a la tradición vasca seleccionando <strong>el mejor producto de temporada y de proximidad.</strong>
+        En nuestro asador, el fuego de la parrilla mima <strong>los mejores pescados frescos del día</strong> y
+        <strong>chuletones de vaca vieja en su punto perfecto.</strong></p>
+        <p>Ofrecemos una cocina sincera, de sabores profundos y recetas de toda la vida elaboradas con mimo.
+        En la barra, <strong>nuestros pintxos</strong> invitan a compartir momentos únicos en un ambiente cálido y acogedor.
+        Todo maridado con un buen Txakoli, tintos de Rioja Alavesa y la hospitalidad que nos caracteriza.
+        Un rincón para disfrutar de la buena mesa, la conversación sin prisa y la autenticidad del País Vasco.</p>
+        <div class="limpiar"></div>
+      </div>
+    </section>
+
+    <!-- Destacados -->
+    <section id="destacados">
+      <div class="contenedor">
+        <h2>Lo mejor de nuestra casa</h2>
+
+        <article class="tarjeta">
+          <img src="images/paella.jpg" alt="Paella de marisco en cazuela" width="800" height="600">
+          <h3>Menú del día</h3>
+          <p>De martes a viernes, un menú con una inmejorable relación calidad-precio, con pan, bebida y postre o café.</p>
+          <p><a href="carta.html#menu-dia">Ver el menú</a></p>
+        </article>
+
+        <article class="tarjeta">
+          <img src="images/pintxos.jpg" alt="Surtido de pintxos sobre pan" width="800" height="600">
+          <h3>Nuestros pintxos</h3>
+          <p>Una barra siempre bien surtida de pintxos variados y apetecibles bocados para disfrutar en cualquier momento del día.</p>
+          <p><a href="carta.html">Ver la carta</a></p>
+        </article>
+
+        <article class="tarjeta">
+          <img src="images/txuleton.jpg" alt="Txuletón de vaca vieja cortado" width="800" height="600">
+          <h3>Txuletón de vaca vieja</h3>
+          <p>Maduración lenta y brasa de leña: el chuletón de nuestro asador, en su punto perfecto, para compartir con buena compañía y un buen vino.</p>
+          <p><a href="carta.html#principales">Ver platos principales</a></p>
+        </article>
+        <div class="limpiar"></div>
+      </div>
+    </section>
+
+    <!-- Horario: tabla con colspan y rowspan -->
+    <section id="horario">
+      <div class="contenedor">
+        <h2>Horario</h2>
+        <p>Abrimos de martes a domingo.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Turno</th>
+              <th>Horas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Martes a viernes</td>
+              <td>Comida</td>
+              <td>13:00 - 16:00</td>
+            </tr>
+            <tr>
+              <td>Cena</td>
+              <td>20:30 - 23:00</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Sábado</td>
+              <td>Comida</td>
+              <td>13:00 - 16:30</td>
+            </tr>
+            <tr>
+              <td>Cena</td>
+              <td>20:30 - 23:30</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>Comida</td>
+              <td>13:00 - 16:30</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Los lunes descansamos.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion">
+      <div class="contenedor">
+        <h2>Cómo llegar</h2>
+
+        <div class="bloque">
+          <h3>Dónde estamos</h3>
+          <p>Gran Vía, 8<br>48001 Bilbao, Bizkaia</p>
+          <p>Teléfono: <a href="#">944 00 00 00</a><br>
+          Email: <a href="#">hola@etxej.eus</a></p>
+          <p><a href="#">Ver en Google Maps</a></p>
+        </div>
+
+        <div class="bloque">
+          <h3>Transporte</h3>
+          <ul>
+            <li><strong>A pie:</strong> estamos cerca de El Corte Inglés, en pleno centro de Bilbao.</li>
+            <li><strong>En metro:</strong> parada Moyúa, a pocos minutos caminando.</li>
+            <li><strong>En autobús:</strong> varias líneas de Bilbobus paran en Gran Vía.</li>
+            <li><strong>En coche:</strong> hay aparcamientos públicos en la zona.</li>
+          </ul>
+        </div>
+
+        <div class="limpiar"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="pie">
+    <div class="contenedor">
+      <div class="columna">
+        <h2>Etxe J</h2>
+        <p>Cocina vasca cerca de El Corte Inglés.</p>
+      </div>
+      <div class="columna">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="reserva.html">Reserva</a></li>
+        </ul>
+      </div>
+      <div class="columna">
+        <h2>Contacto</h2>
+        <p>Gran Vía, 8<br>48001 Bilbao<br>944 00 00 00</p>
+      </div>
+      <div class="columna">
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="limpiar"></div>
+      <hr>
+      <p class="copy">© 2026 Etxe J. Restaurante vasco en Bilbao.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

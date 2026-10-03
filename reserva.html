@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva | Etxe J</title>
+  <meta name="description" content="Reserva tu mesa en Etxe J, restaurante de cocina vasca en Bilbao.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <header id="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <span class="nombre">Etxe J</span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a class="boton-reserva" href="reserva.html">Reservar mesa</a></li>
+        </ul>
+      </nav>
+      <div class="limpiar"></div>
+    </div>
+  </header>
+
+  <main>
+    <nav id="indice">
+      <div class="contenedor">
+        <strong>En esta página:</strong>
+        <ul>
+          <li><a href="#formulario">Formulario de reserva</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="portada">
+      <div class="contenedor">
+        <h1>Reserva tu mesa</h1>
+        <p class="destacado">Rellena el formulario y confirmaremos tu reserva por email o teléfono en 24 horas.</p>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <div class="contenedor">
+        <h2>Formulario de reserva</h2>
+        <form action="server.php" method="post">
+
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ane Etxeberria" required autofocus>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalles de la reserva</legend>
+
+            <label for="local">Restaurante</label>
+            <input type="text" id="local" name="local" value="Etxe J - Gran Vía, 8" disabled>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="comensales">Número de comensales</label>
+            <input type="number" id="comensales" name="comensales" value="2" required>
+
+            <label for="zona">Zona preferida</label>
+            <select id="zona" name="zona">
+              <optgroup label="Interior">
+                <option value="salon" selected>Salón principal</option>
+                <option value="barra">Zona de barra</option>
+              </optgroup>
+              <optgroup label="Exterior">
+                <option value="terraza">Terraza</option>
+              </optgroup>
+            </select>
+
+            <label for="mensaje">Comentarios adicionales</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="25" maxlength="300" placeholder="Silla para bebé, celebración, etc."></textarea>
+          </fieldset>
+
+          <div class="casilla">
+            <input type="checkbox" id="novedades" name="novedades" value="si">
+            <label for="novedades">Quiero recibir novedades por email</label>
+          </div>
+          <div class="casilla">
+            <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
+            <label for="privacidad">Acepto la política de privacidad</label>
+          </div>
+
+          <input type="submit" value="Confirmar reserva">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="pie">
+    <div class="contenedor">
+      <div class="columna">
+        <h2>Etxe J</h2>
+        <p>Cocina vasca cerca de El Corte Inglés.</p>
+      </div>
+      <div class="columna">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="reserva.html">Reserva</a></li>
+        </ul>
+      </div>
+      <div class="columna">
+        <h2>Contacto</h2>
+        <p>Gran Vía, 8<br>48001 Bilbao<br>944 00 00 00</p>
+      </div>
+      <div class="columna">
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="limpiar"></div>
+      <hr>
+      <p class="copy">© 2026 Etxe J. Restaurante vasco en Bilbao.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

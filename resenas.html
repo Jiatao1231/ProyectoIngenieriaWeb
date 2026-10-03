@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reseñas | Etxe J</title>
+  <meta name="description" content="Opiniones de los comensales de Etxe J y formulario para dejar tu reseña.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header id="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <span class="nombre">Etxe J</span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html" class="activo">Reseñas</a></li>
+          <li><a class="boton-reserva" href="reserva.html">Reservar mesa</a></li>
+        </ul>
+      </nav>
+      <div class="limpiar"></div>
+    </div>
+  </header>
+
+  <main>
+    <nav id="indice">
+      <div class="contenedor">
+        <strong>En esta página:</strong>
+        <ul>
+          <li><a href="#comentarios">Comentarios</a></li>
+          <li><a href="#opinion">Deja tu opinión</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="portada">
+      <div class="contenedor">
+        <h1>Lo que dicen nuestros comensales</h1>
+        <p class="destacado">Estas son algunas de las opiniones que hemos recibido. Gracias por confiar en nosotros.</p>
+      </div>
+    </section>
+
+    <section id="comentarios">
+      <div class="contenedor">
+        <h2>Comentarios</h2>
+        <p>Valoración media: <span class="nota">4,6 / 5</span> (87 opiniones)</p>
+        <article class="resena">
+          <h3>Ainhoa L.</h3>
+          <p><em>Una experiencia gastronómica inolvidable. El chuletón a la parrilla estaba en su punto exacto de maduración y la merluza en salsa verde era pura mantequilla. La barra de pintxos impresiona desde que entras y el trato del personal te hace sentir como en casa. Repetiremos sin duda.</em></p>
+          <p><span class="estrellas">★★★★★</span> 5 de 5</p>
+        </article>
+        <article class="resena">
+          <h3>Markel S.</h3>
+          <p><em>El mejor asador de la zona. La atención al cliente es cercana, profesional y súper rápida a pesar de estar el local lleno. Los pimientos del Piquillo y el rodaballo a la espalda sencillamente espectaculares. Calidad-precio inmejorable para comer bien y sin prisas.</em></p>
+          <p><span class="estrellas">★★★★★</span> 5 de 5</p>
+        </article>
+        <article class="resena">
+          <h3>Laura P.</h3>
+          <p><em>Ideal para los amantes de la buena mesa. Fuimos a comer en familia y probamos las alubias de Tolosa y el chuletón de vaca vieja; una maravilla de sabores profundos. El ambiente es cálido, acogedor y con ese toque rústico tan característico. Salimos encantados.</em></p>
+          <p><span class="estrellas">★★★★★</span> 5 de 5</p>
+        </article>
+        <article class="resena">
+          <h3>Jon E.</h3>
+          <p><em>Pintxos de diez y un servicio impecable. Paramos a tomar algo en la barra y terminamos cenando en el comedor por lo buena que pintaba la carta. Cada plato superó nuestras expectativas, especialmente los pescados del Cantábrico a la brasa. Un restaurante de los que ya no quedan.</em></p>
+          <p><span class="estrellas">★★★★★</span> 5 de 5</p>
+        </article>
+        <div class="limpiar"></div>
+      </div>
+    </section>
+
+    <section id="opinion">
+      <div class="contenedor">
+        <h2>Deja tu opinión</h2>
+        <p>¿Has comido con nosotros? Cuéntanos qué tal fue.</p>
+        <form action="server.php" method="post">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="valoracion">Valoración</label>
+          <select id="valoracion" name="valoracion" required>
+            <option value="">Selecciona una puntuación</option>
+            <optgroup label="Puntuación">
+              <option value="5">5 - Excelente</option>
+              <option value="4">4 - Muy buena</option>
+              <option value="3" selected>3 - Buena</option>
+              <option value="2">2 - Mejorable</option>
+              <option value="1">1 - Mala</option>
+            </optgroup>
+          </select>
+
+          <label for="comentario">Tu comentario</label>
+          <textarea id="comentario" name="comentario" rows="5" cols="25" minlength="10" maxlength="500" placeholder="Cuéntanos tu experiencia..."></textarea>
+          <span class="ayuda">Entre 10 y 500 caracteres.</span>
+
+          <input type="submit" value="Enviar opinión">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="pie">
+    <div class="contenedor">
+      <div class="columna">
+        <h2>Etxe J</h2>
+        <p>Cocina vasca cerca de El Corte Inglés.</p>
+      </div>
+      <div class="columna">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="reserva.html">Reserva</a></li>
+        </ul>
+      </div>
+      <div class="columna">
+        <h2>Contacto</h2>
+        <p>Gran Vía, 8<br>48001 Bilbao<br>944 00 00 00</p>
+      </div>
+      <div class="columna">
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="limpiar"></div>
+      <hr>
+      <p class="copy">© 2026 Etxe J. Restaurante vasco en Bilbao.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
